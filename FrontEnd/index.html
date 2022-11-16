@@ -27,7 +27,26 @@
         <li style="float:right"><a href="loginSignup.html" target="_blank">SignUp</a></li>
         <li style="float:right"><a href="loginSignup.html" target="_blank">Login</a></li>
     </ul>
-
+<center><div class="form-box">
+  <select>  <option>From</option>
+        <option>Banglore</option>
+        <option>Chennai</option>
+        <option>Manglore</option>
+        <option>Hyderabad</option>
+        <option>Goa</option>
+        <option>Mumbai</option>
+    </select>
+    <select>  <option>To</option>
+        <option>Banglore</option>
+        <option>Chennai</option>
+        <option>Manglore</option>
+        <option>Hyderabad</option>
+        <option>Goa</option>
+        <option>Mumbai</option>
+    </select>
+    <input type="date" class="search-field Date" placeholder="From">
+    <button class="search-btn" type="button">Search</button>
+   </div></center>
     <!-- Slide Show -->
     <section>
         <img class="mySlides" src="bus1.avif" style="width:100%">
@@ -46,6 +65,7 @@
             for (i = 0; i < x.length; i++) {
                 x[i].style.display = "none";
             }
+            
             myIndex++;
             if (myIndex > x.length) { myIndex = 1 }
             x[myIndex - 1].style.display = "block";

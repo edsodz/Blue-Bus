@@ -291,3 +291,19 @@ ol li {
     margin-bottom: 5px;
     padding-bottom: 10px;
 }
+.from-box{
+    padding: 10px;
+    margin: 25px;
+    border: #111;
+    border-radius: 25px;
+}
+.search-btn{
+    width: 200px;
+    border-radius: 25px;
+    margin: 10px;
+    background: blue;
+    color: #fff;
+}
+.search-btn:hover{
+    cursor: pointer;
+}
