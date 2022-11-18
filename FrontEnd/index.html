@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>blueBus - A Heaven For Travellers</title>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/FrontEnd/images/logo.png">
+
     <link rel="stylesheet" href="styles.css">
     <!-- Link for Font Awesome Icon Classes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -17,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <!-- Navigation Bar  -->
     <ul>
         <li><a class="active" href="#home"><strong>blueBus</strong></a></li>
@@ -28,30 +32,14 @@
         <li style="float:right"><a href="loginSignup.html" target="_blank">Login</a></li>
     </ul>
 
-    <!-- Slide Show -->
-    <section>
-        <img class="mySlides" src="bus1.avif" style="width:100%">
-        <img class="mySlides" src="bus2.avif" style="width:100%">
-        <img class="mySlides" src="bus3.avif" style="width:100%">
-    </section>
-
-    <!-- Automatic Slideshow - change image every 3 seconds -->
-    <script>
-        var myIndex = 0;
-        carousel();
-
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
-            }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 3000);
-        }
-    </script>
+    <!-- banner -->
+    <div class="banner-image">
+        <div class="banner-text">
+            <h1>blueBus</h1>
+            <p>A Heaven For Travellers</p>
+            <button>Book Ticket</button>
+        </div>
+    </div>
 
     <!--footer-->
     <footer class="footer">
@@ -60,10 +48,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="kilimanjaro_part" id = "about">
+                        <div class="kilimanjaro_part" id="about">
                             <h5>About Us</h5>
                             <p>It includes rich features & contents. It's designed & developed based on One Page/
-                                Multi-page Layout,blog themes,world press themes and blogspot. You can use any layout
+                                Multi-page Layout,blog themes,world press themes and blogspot. You can use any
+                                layout
                                 from any demo anywhere.</p>
                             <p>webblogoverflow is completely creative, clean & 100% responsive website. Put your
                                 business into next level with Webublogoverflow.</p>
@@ -73,7 +62,8 @@
                             <ul class="kilimanjaro_social_links">
                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-                                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a></li>
+                                <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pinterest</a>
+                                </li>
                                 <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a></li>
                                 <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
                             </ul>
@@ -99,12 +89,15 @@
                             <ul class="kilimanjaro_links">
                                 <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Terms &
                                         Conditions</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>About Licences</a>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>About
+                                        Licences</a>
                                 </li>
-                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Help & Support</a>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Help &
+                                        Support</a>
                                 </li>
                                 <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Careers</a></li>
-                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy Policy</a>
+                                <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Privacy
+                                        Policy</a>
                                 </li>
                                 <li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i>Community &
                                         Forum</a></li>
@@ -133,7 +126,8 @@
                                 </div>
                                 <a href="#" style="color: white;">blueBus gets the first foreign investor</a>
                                 <p class="kilimanjaro_date">30 October 2022</p>
-                                <p>SoftBank biggest foreign investor in India, invests Rupees 15Cr to blueBus. "This is
+                                <p>SoftBank biggest foreign investor in India, invests Rupees 15Cr to blueBus. "This
+                                    is
                                     a revolution!" says SoftBank CEO <strong>Masayoshi Son</strong>.</p>
                             </div>
                             <div class="kilimanjaro_blog_area">
@@ -144,13 +138,14 @@
                                 </div>
                                 <a href="#" style="color: white;">blueBus donates 900Cr to charity.</a>
                                 <p class="kilimanjaro_date">20 November 2022</p>
-                                <p>blueBus becomes the first ever transport company to achieve 1.2 billion profit in 5
+                                <p>blueBus becomes the first ever transport company to achieve 1.2 billion profit in
+                                    5
                                     years.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-3">
-                        <div class="kilimanjaro_part" id = "contactUs">
+                        <div class="kilimanjaro_part" id="contactUs">
                             <h5>Quick Contact</h5>
                             <div class="kilimanjaro_single_contact_info">
                                 <h5>Phone:</h5>
@@ -194,6 +189,7 @@
             </div>
         </div>
     </footer>
+
 
 </body>
 
