@@ -1,1 +1,40 @@
-<h1>Book The Bus Ticket</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blueBus - A Heaven For Travellers</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+</head>
+<body>
+    <h1>Book The Bus Ticket!!</h1>
+
+    <div class="container">
+        <form action="ticketbooking.php" method="post">
+            <label for="name">Enter the name: </label>
+            <input type="text" id="name" class="name" name="name"><br>
+            <label for="age">Enter your age: </label>
+            <input type="number" id="age" class="age" min="1" max="60"><br>
+            <label for="email">Enter your email: </label>
+            <input type="text" id="email" class="email"><br>
+            Enter your gender: 
+            <input type="radio" name="gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="other">
+            <label for="other">Other</label><br><br>
+            <label for="source">Enter the source: </label>
+            <input type="text" id="source" class="source"><br>
+            <label for="destination">Enter the destination: </label>
+            <input type="text" id="destination" class="destination"><br>
+            <label for="journeyDate">Select the journey date: </label>
+            <input type="date" id="journeyDate" class="journeyDate"><br>
+            <label for="numberOfTicket">Enter the total number of ticket: </label>
+            <input type="number" name="numberOfTicket" id="numberOfTicket" min="1" max="5"><br>
+            <input type="button" value="Buy Ticket">
+        </form>
+    </div>
+</body>
+</html>

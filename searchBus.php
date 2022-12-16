@@ -50,7 +50,9 @@ mysqli_close($dbh);
 }
 ?>
 </table>
-<div class="ticketBooking"><a href="ticketbooking.html"><input type="button" value="BookTicket"></a></div>
+<div class="ticketBooking">
+<button onclick="window.open('ticketbooking.html', '_blank')"><input type="button" value="BookTicket"></a></button>
+</div>
 
 </body>
 </html>
