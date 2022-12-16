@@ -89,7 +89,7 @@
 
       .col-25,
       .col-75,
-      input[type=submit] {
+      .SearchButton {
         width: 100%;
         margin-top: 0;
       }
@@ -104,11 +104,10 @@
   <div class="navigationbar">
     <ul>
       <li><a class="active" href="#home"><strong>blueBus</strong></a></li>
-      <li><a href="#about" target="_blank">About</a></li>
-      <li><a href="#reservation" target="_blank">Reservation</a></li>
       <li><a href="contactUs.html" target="_blank">Contact Us</a></li>
       <li><a href="index.php" target="_blank">Login</a></li>
       <li><a href="register.html" target="_blank">SignUp</a></li>
+      <li><a href="ticketbooking.html" target="_blank">BookMyTicket</a></li>
     </ul>
   </div>
 
@@ -121,39 +120,7 @@
       <h1>blueBus - A Heaven For Travellers!</h1>
     </div>
   </div>
-  <br><br><br><br>
-  <!-- Bus Booking Form -->
-  <div class="container">
-    <form action="searchBus.php">
-      <div class="row">
-        <div class="col-25">
-          <label for="source">Enter the source: </label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="source" name="source" placeholder="Enter the source...">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="destination">Enter the destination: </label>
-        </div>
-        <div class="col-75">
-          <input type="text" id="destination" name="destination" placeholder="Enter the destination...">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-25">
-          <label for="journeyDate">Enter the journey date</label>
-        </div>
-        <div class="col-75">
-          <input type="date" id="journeyDate" name="journeyDate">
-        </div>
-      </div>
-      <div class="row">
-        <input type="submit" value="Submit">
-      </div>
-    </form>
-  </div>
+
 </body>
 
 </html>

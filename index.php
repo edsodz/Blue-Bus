@@ -20,7 +20,7 @@
         <label for="password">password</label>
         <input type="text" id="password" class="password" name="password" placeholder="password" ><br>
         
-        <button type="submit">Login</button>
+        <a href="ticketbooking.html"><button type="submit">Login</button></a>
     </form>
 </body>
 </html>

@@ -4,16 +4,16 @@
 <head>
 <title> Search for Bus </title>
 </head>
-<body bgcolor = "#CCFFFF" text = "#660099">
+<body bgcolor= "#CCFFFF" text = "#660099">
 <h1> Search for Buses </h1>
 <?php
 $self = $_SERVER['PHP_SELF'];
 ?>
-<form action="<?=$self?>" method="GET">
+<form action="" method="GET">
 Enter Source : <input type="text" name ="source" />
-<!-- <input type="hidden" name="source" /> -->
+<!-- <input type="hidden" name="source" />  -->
 Enter Destination : <input type="text" name ="destination" />
-<!-- <input type="hidden" name="destination" /> -->
+ <!-- <input type="hidden" name="destination" /> -->
 <input type="submit" value = "Search" name="search"/>
 </form>
 <?php
@@ -50,7 +50,7 @@ mysqli_close($dbh);
 }
 ?>
 </table>
-<div class="ticketBooking"><input type="button" value="BookTicket"></div>
+<div class="ticketBooking"><a href="ticketbooking.html"><input type="button" value="BookTicket"></a></div>
 
 </body>
 </html>
