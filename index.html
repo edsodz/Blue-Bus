@@ -96,75 +96,83 @@
     }
 
     * {
-  box-sizing: border-box;
-}
+      box-sizing: border-box;
+    }
 
-body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
-}
+    body {
+      font-family: Arial;
+      padding: 20px;
+      background: #f1f1f1;
+    }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
-  background: rgb(4, 95, 208);
-  color: white;
-}
+    /* Header/Blog Title */
+    .header {
+      padding: 30px;
+      font-size: 40px;
+      text-align: center;
+      background: rgb(4, 95, 208);
+      color: white;
+    }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {
-  float: left;
-  width: 75%;
-}
+    /* Create two unequal columns that floats next to each other */
+    /* Left column */
+    .leftcolumn {
+      float: left;
+      width: 75%;
+    }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
+    /* Right column */
+    .rightcolumn {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+    }
 
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
+    /* Fake image */
+    .hero-image {
+      background-color: rgb(4, 95, 208);
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
 
-/* Add a card effect for articles */
-.card {
-  background-color: white;
-  padding: 20px;
-  margin-top: 20px;
-}
+    .hero-text {
+      color: white;
+      
+    }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+    /* Add a card effect for articles */
+    .card {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+    }
 
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: rgb(4, 95, 208);
-  margin-top: 20px;
-  color: white;
-}
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {
-    width: 100%;
-    padding: 0;
-  }
-}
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: rgb(4, 95, 208);
+      margin-top: 20px;
+      color: white;
+    }
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
   </style>
 
 </head>
@@ -182,52 +190,43 @@ body {
     </ul>
   </div>
 
-  <!-- header -->
-  <!-- <div class="header">
-    <div id="header">
-      <img src="busIsBlueLogo-removebg-preview.png" alt="blueBusLogo" class="blueBusLogo">
-    </div>
-    <div id="heading">
-      <h1>blueBus - A Heaven For Travellers!</h1>
-    </div>
-  </div> -->
   <div class="header">
     <h2>🚎 blueBus - A Heaven For Travellers 🚎</h2>
   </div>
-  
+
   <div class="row">
     <div class="leftcolumn">
       <div class="card">
         <h2>blueBus becomes the leading platform for booking tickets.</h2>
-        <h5>On December 17 2022 blueBus beats the RedBus and becomes the first web application to have more than 150+ million active users.</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>As per the StartUp Community of India (SCI), blueBus becomes the leading company to have more than 150+ million active users.</p>
-      </div>
-      <div class="card">
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg" style="height:200px;">Image</div>
-        <p>Some text..</p>
+        <h5>On December 17 2022 blueBus beats the RedBus and becomes the first web application to have more than 150+
+          million active users.</h5>
+        <div class="hero-image" style="height:200px;">
+          <div class="hero-text">
+            <h1>blueBus</h1>
+            <p>It's time to take action. Book the top luxury buses and make your journey memorable.</p>
+            <button onclick="window.open('searchBus.php', '_blank')">
+              Search buses
+            </button>
+          </div>
+        </div>
+        <p>As per the StartUp Community of India (SCI), blueBus becomes the leading company to have more than 150+
+          million active users.</p>
       </div>
     </div>
     <div class="rightcolumn">
       <div class="card">
         <h2>About blueBus</h2>
-        <p>blueBus is a leading online platform for booking the bus tickts to travel accorss India. blueBus provides it's users an cool and simple UI that helps them not only to book tickets easily but also suggests the budget friendly cost of tickets.</p>
+        <p>blueBus is a leading online platform for booking the bus tickts to travel accorss India. blueBus provides
+          it's users an cool and simple UI that helps them not only to book tickets easily but also suggests the budget
+          friendly cost of tickets.</p>
       </div>
-      <!-- <div class="card">
-        <h3>Popular Post</h3>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div><br>
-        <div class="fakeimg">Image</div>
-      </div> -->
       <div class="card">
         <h3>Follow blueBus</h3>
         <p><a href="url">www.blueBus.com</a></p>
       </div>
     </div>
   </div>
-  
+
   <div class="footer">
     <h5>&copy; Copyright 2022 Made with ❤️ blueBus - A Heaven For Travellers</h5>
   </div>

@@ -20,7 +20,7 @@
         <label for="password">password</label>
         <input type="text" id="password" class="password" name="password" placeholder="password" ><br>
         
-        <button onclick="window.open('searchBus.php', '_blank')">
+        <button >
           Submit
         </button>
     </form>
